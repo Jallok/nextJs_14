@@ -8,20 +8,20 @@ import { Metadata } from "next";
 
 type Props = {
   params: {
-    noteId: string
-  }
-}
+    noteId: string;
+  };
+};
 
 // dinamic metadata
-export const generateMetadata = ({params}: Props): Metadata => {
+export const generateMetadata = ({ params }: Props): Metadata => {
   return {
-    title: `Note Detail ${params.noteId}`
-  }
-}
+    title: `Note Detail ${params.noteId}`,
+  };
+};
 
-export default function NoteDetail({
-  params,
-}: Props) {
+export default function NoteDetail({ params, searchParams }: any) {
+  console.log(searchParams);
+
   if (parseInt(params.noteId) > 100) {
     notFound();
   }

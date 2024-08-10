@@ -1,5 +1,3 @@
-export default function FashionPage(){
-    return(
-        <h1>Fashion Page YGY</h1>
-    )
+export default function FashionPage() {
+  return <h1 className="h-[900px]">Fashion Page YGY</h1>;
 }
