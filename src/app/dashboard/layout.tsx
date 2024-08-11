@@ -11,7 +11,7 @@ export default function DashboarLayout({
   analitycs: React.ReactNode;
   login: React.ReactNode;
 }) {
-  const isLogin = false;
+  const isLogin = true;
   return (
     <div className="my-4 mx-4">
       <div>{children}</div>
